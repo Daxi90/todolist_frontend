@@ -1,0 +1,6 @@
+@for (todo of todos; track todo.id) {
+    <input type="checkbox" [checked]="todo.checked">
+    {{ todo.title }}
+    } @empty {
+    <h1>{{error}}</h1>
+    }
